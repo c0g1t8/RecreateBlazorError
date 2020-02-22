@@ -10,17 +10,18 @@ namespace HIH.Pages
 {
     public partial class Index : ComponentBase
     {
-        [Inject]
-        public IPersonService PersonService { get; set; }
-
-        private List<Person> people;
-
-        protected override void OnInitialized()
-        {
-            base.OnInitialized();
-            people = PersonService.GetSamplePeople().ToList<Person>();
-            Debug.WriteLine(people[0].Title);
-
-        }
     }
+    //     [Inject]
+    //     public IPersonService PersonService { get; set; }
+    //
+    //     public List<Person> people;
+    //
+    //     protected override void OnInitialized()
+    //     {
+    //         base.OnInitialized();
+    //         people = PersonService.GetSamplePeople().ToList<Person>();
+    //         Debug.WriteLine(people[0].Title);
+    //
+    //     }
+    // }
 }
