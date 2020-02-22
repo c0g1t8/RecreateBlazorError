@@ -8,6 +8,7 @@
     <ProjectReference Include="..\TestLib\TestLib.csproj" />
     <ProjectReference Include="..\[Biz]\Biz.Person\Biz.Person.csproj" />
     <ProjectReference Include="..\[Project]\Poject.Core.Services\Poject.Core.Services.csproj" />
+    <ProjectReference Include="..\[Project]\Project.Core.Web\Project.Core.Web.csproj" />
   </ItemGroup>
 
 </Project>
