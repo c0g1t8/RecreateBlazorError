@@ -1,0 +1,18 @@
+﻿@using Biz.Person
+
+<h3>PeoplePanel</h3>
+<div class="c1WrapCardsFlex">
+    @foreach (var person in People)
+    {
+        @person.Title
+        <br />
+        @*<PersonBox Person="@person" />*@
+    }
+</div>
+
+@code
+{
+    [Parameter]
+    public List<Person> People { get; set; }
+}
+

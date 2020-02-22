@@ -6,10 +6,13 @@
 <h1>Hello, world!</h1>
 
 @*<PeoplePanel People="people" />*@
+
+<TestLib.PeoplePanel People="@people" />
+@*<TestLib.PeoplePanel People="@people"></TestLib.PeoplePanel>*@
 <TestLib.Component1></TestLib.Component1>
 
 @code
-{ 
+{
     [Inject]
     public IPersonService PersonService { get; set; }
 

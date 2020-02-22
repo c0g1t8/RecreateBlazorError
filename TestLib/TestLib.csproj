@@ -11,4 +11,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\[Biz]\Biz.Person\Biz.Person.csproj" />
+  </ItemGroup>
+
 </Project>
