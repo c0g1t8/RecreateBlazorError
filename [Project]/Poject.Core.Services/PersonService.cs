@@ -2,7 +2,12 @@
 
 namespace HIH.Core.Services
 {
-    public class PersonService
+    public interface IPersonService
+    {
+        Person[] GetSamplePeople();
+    }
+
+    public class PersonService : IPersonService
     {
         public Person[] GetSamplePeople()
         {
