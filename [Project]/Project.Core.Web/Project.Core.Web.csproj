@@ -1,13 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.2" />
+    <Content Remove="Components\PeoplePanel.razor" />
+    <Content Remove="Components\PersonBox.razor" />
+    <Content Remove="Tags\TagBox.razor" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Components\PeoplePanel.razor" />
+    <None Include="Components\PersonBox.razor" />
+    <None Include="Tags\TagBox.razor" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\..\[Biz]\Biz.Person\Biz.Person.csproj" />
