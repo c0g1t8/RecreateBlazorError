@@ -1,0 +1,16 @@
+@namespace OurCompany.Blazor
+
+@for (int i = 0; i < Tags.Count(); i++)
+{
+    Tag current = Tags[i];
+    <a class="t1Hash" href="@current.Address">@($"#{current.Title}")</a>
+}
+
+
+@code {
+    [Parameter]
+    public Tag[] Tags { get; set; }
+
+    [Parameter]
+    public string TagsIndicator { get; set; }
+}
