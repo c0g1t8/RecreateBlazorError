@@ -5,6 +5,7 @@ namespace HIH.Components
 {
     public partial class PersonBox : ComponentBase
     {
+        [Parameter]
         public Person Person { get; set; }
 
         public Tag[] allTags;
